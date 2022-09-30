@@ -1,14 +1,20 @@
 package com.example.restfulwebservice.user;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-@Data
+
+@Service
+
+@Getter
+@Setter
 public class UserDaoService {
     private static List<User> users = new ArrayList<>();
-
     private static int usersCount = 3;
 
     static {
